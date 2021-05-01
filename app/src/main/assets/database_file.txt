@@ -1,0 +1,13 @@
+word
+application
+black
+green
+yellow
+gray
+red
+purple
+pink
+apple
+banana
+random
+sequence

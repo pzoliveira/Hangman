@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TableRow
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:textStyle="italic|bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txtTitle"
+            android:layout_column="0"
+            android:gravity="center"
+            android:id="@+id/txtTitle"
+            android:text="Hangman" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txtWordToBeGuessed"
+            android:layout_column="0"
+            android:gravity="center"
+            android:id="@+id/txtWordToBeGuessed"
+            android:text="My word" />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <EditText
+            android:maxLength="1"
+            android:textStyle="italic"
+            android:textColor="@color/colorSecondary"
+            android:textColorHint="@color/colorSecondary"
+            android:textSize="@dimen/edtInput"
+            android:layout_column="0"
+            android:gravity="center"
+            android:id="@+id/edtInput"
+            android:hint="Input one letter" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txtLettersTried"
+            android:layout_column="0"
+            android:gravity="center"
+            android:id="@+id/txtLettersTried"
+            android:text="Letters tried:" />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/trTriesLeft">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txtTriesLeft"
+            android:layout_column="0"
+            android:gravity="center"
+            android:id="@+id/txtTriesLeft"
+            android:text=" X X X X X" />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/trReset">
+        <Button
+            android:onClick="resetGame"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorSecondary"
+            android:textSize="@dimen/btnReset"
+            android:layout_column="0"
+            android:id="@+id/btnReset"
+            android:text="Reset" />
+    </TableRow>
+
+</TableLayout>
